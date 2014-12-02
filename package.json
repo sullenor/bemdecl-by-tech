@@ -1,0 +1,20 @@
+{
+  "name": "bemdecl-by-tech",
+  "version": "0.0.1",
+  "description": "Наглядная демонстрация того, как собираются зависимости с использованием технологии bemdecl-from-deps-by-tech",
+  "main": "index.js",
+  "scripts": {
+    "test": "enb make --no-cache"
+  },
+  "keywords": [
+    "bem"
+  ],
+  "author": {
+    "name": "Alexey Litvinov",
+    "email": "iamhoneyboy@gmail.com"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "enb": "^0.13.9"
+  }
+}
