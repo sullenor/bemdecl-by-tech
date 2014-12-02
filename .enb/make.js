@@ -10,12 +10,13 @@ module.exports = function (config) {
         ]);
 
         nodeConfig.addTechs([
-            [ require('enb/techs/bemdecl-from-deps-by-tech'), {sourceTech: 'js', destTech: 'bemhtml', target: '?.client.bemdecl.js'} ]
+            [ require('enb/techs/bemdecl-from-deps-by-tech'), {sourceTech: 'js', destTech: 'bemhtml', target: '?.client.bemdecl.js'} ],
+            [ require('enb/techs/deps-old'), {bemdeclTarget: '?.client.bemdecl.js', depsTarget: '?.client.deps.js'} ],
         ]);
 
         nodeConfig.addTargets([
             '?.deps.js',
-            '?.client.bemdecl.js'
+            '?.client.deps.js'
         ]);
     });
 
